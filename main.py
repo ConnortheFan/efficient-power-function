@@ -1,5 +1,3 @@
-import math
-
 def power(a,b):
   global n
   if b == 0:
@@ -15,7 +13,7 @@ def power(a,b):
     return factor * factor
   elif b % 2 == 1:
     n += 2
-    half = math.floor(b/2)
+    half = b//2
     factor = power(a, half)
     return factor * factor * a
 
