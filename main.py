@@ -1,3 +1,14 @@
+#Let power(a,b) denote the power function ab. For example, power(5,3)=53=125. A trivial algorithm to implement power(a,b) is the following:
+
+#Algorithm power(a,b):
+#	result ← 1
+#	Repeat b times:
+#		result ← #result × a
+#	Return result
+
+#Note, however, that we will always have to perform exactly b multiplication operations. Can we compute power(a,b) using fewer than b multiplication operations?
+
+
 def power(a,b):
   global n
   if b == 0:
